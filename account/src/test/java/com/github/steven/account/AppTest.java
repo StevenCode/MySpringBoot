@@ -1,4 +1,4 @@
-package com.github.steven;
+package com.github.steven.account;
 
 import static org.junit.Assert.assertTrue;
 

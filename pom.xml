@@ -12,6 +12,7 @@
 
     <modules>
         <module>account</module>
+        <module>accout-api</module>
     </modules>
 
     <name>MySpringBoot</name>

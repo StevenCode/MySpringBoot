@@ -16,37 +16,10 @@
 
     <dependencies>
 
-        <dependency>
-            <groupId>org.springframework.kafka</groupId>
-            <artifactId>spring-kafka</artifactId>
-        </dependency>
-
-        <!-- RocketMQ 客户端相关依赖 -->
-        <!-- https://mvnrepository.com/artifact/org.apache.rocketmq/rocketmq-client -->
-        <dependency>
-            <groupId>org.apache.rocketmq</groupId>
-            <artifactId>rocketmq-client</artifactId>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/org.apache.rocketmq/rocketmq-common -->
-        <dependency>
-            <groupId>org.apache.rocketmq</groupId>
-            <artifactId>rocketmq-common</artifactId>
-        </dependency>
-
+        <!--spring boot的核心启动器-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-activemq</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-amqp</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>com.rabbitmq</groupId>
-            <artifactId>amqp-client</artifactId>
-            <version>4.3.0</version>
+            <artifactId>spring-boot-starter-aop</artifactId>
         </dependency>
 
         <dependency>
@@ -60,13 +33,6 @@
             <version>1.1.1</version>
         </dependency>
 
-
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-feign</artifactId>
-        </dependency>
-
-        <!--spring boot的核心启动器-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>

@@ -1,0 +1,33 @@
+server:
+  port: 8883
+  contextPath: /inventory-service
+  address: 0.0.0.0
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.01:3306/account?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&useSSL=false
+    username: root
+    password: 123456
+  application:
+    name:  inventory-service
+
+mybatis:
+  type-aliases-package: com.github.steven.inventory.api.entity
+  config-location: classpath:mybatis/mybatis-config.xml
+
+account-service :
+  ribbon.NFLoadBalancerRuleClassName : com.netflix.loadbalancer.RandomRule
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+logging:
+  level:
+    root: info
+    org.springframework.web: info
+    org.apache.ibatis: info
+
+  path: "./logs"

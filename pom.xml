@@ -13,12 +13,12 @@
     <modules>
         <module>account</module>
         <module>accout-api</module>
+        <module>eureka</module>
+        <module>inventory-api</module>
+        <module>inventory</module>
     </modules>
 
     <name>MySpringBoot</name>
-    <!-- FIXME change it to the project's website -->
-    <url>http://www.example.com</url>
-
 
     <parent>
         <groupId>org.springframework.boot</groupId>

@@ -1,6 +1,7 @@
 package com.github.steven.inventory.controller;
 
 import com.github.steven.inventory.api.entity.InventoryDO;
+import com.github.steven.inventory.api.dto.InventoryDTO;
 import com.github.steven.inventory.api.service.InventoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -19,7 +20,7 @@ public class InventoryController {
     }
 
     @RequestMapping("/decrease")
-    public Boolean decrease(RequestBody InventoryDTO inventoryDTO) {
+    public Boolean decrease(@RequestBody InventoryDTO inventoryDTO ) {
         return inventoryService.decrease(inventoryDTO);
     }
 

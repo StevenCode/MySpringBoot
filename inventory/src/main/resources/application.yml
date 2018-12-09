@@ -6,7 +6,7 @@ server:
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://127.0.01:3306/account?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&useSSL=false
+    url: jdbc:mysql://127.0.0.1:3306/stock?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&useSSL=false
     username: root
     password: 123456
   application:
@@ -16,7 +16,7 @@ mybatis:
   type-aliases-package: com.github.steven.inventory.api.entity
   config-location: classpath:mybatis/mybatis-config.xml
 
-account-service :
+inventory-service:
   ribbon.NFLoadBalancerRuleClassName : com.netflix.loadbalancer.RandomRule
 
 eureka:

@@ -1,4 +1,4 @@
-package com.github.steven.accountapi.entity;
+package com.github.steven.account.api.entity;
 
 import lombok.Data;
 

@@ -1,4 +1,4 @@
-package com.github.steven.accountapi.dto;
+package com.github.steven.account.api.dto;
 
 import lombok.Data;
 

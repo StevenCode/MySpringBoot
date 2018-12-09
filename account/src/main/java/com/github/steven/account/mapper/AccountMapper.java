@@ -1,6 +1,6 @@
 package com.github.steven.account.mapper;
 
-import com.github.steven.accountapi.entity.AccountDO;
+import com.github.steven.account.api.entity.AccountDO;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
 

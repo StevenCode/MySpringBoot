@@ -17,7 +17,7 @@
 
         <dependency>
             <groupId>com.github.steven</groupId>
-            <artifactId>accout-api</artifactId>
+            <artifactId>account-api</artifactId>
             <version>${project.version}</version>
         </dependency>
         <!--spring boot的核心启动器-->

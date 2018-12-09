@@ -1,9 +1,9 @@
 package com.github.steven.account.service.impl;
 
 import com.github.steven.account.mapper.AccountMapper;
-import com.github.steven.accountapi.dto.AccountDTO;
-import com.github.steven.accountapi.entity.AccountDO;
-import com.github.steven.accountapi.service.AccountService;
+import com.github.steven.account.api.dto.AccountDTO;
+import com.github.steven.account.api.entity.AccountDO;
+import com.github.steven.account.api.service.AccountService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

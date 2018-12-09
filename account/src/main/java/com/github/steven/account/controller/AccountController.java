@@ -1,8 +1,8 @@
 package com.github.steven.account.controller;
 
-import com.github.steven.accountapi.dto.AccountDTO;
-import com.github.steven.accountapi.entity.AccountDO;
-import com.github.steven.accountapi.service.AccountService;
+import com.github.steven.account.api.dto.AccountDTO;
+import com.github.steven.account.api.entity.AccountDO;
+import com.github.steven.account.api.service.AccountService;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;

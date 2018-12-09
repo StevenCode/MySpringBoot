@@ -12,10 +12,11 @@
 
     <modules>
         <module>account</module>
-        <module>accout-api</module>
+        <module>account-api</module>
         <module>eureka</module>
         <module>inventory-api</module>
         <module>inventory</module>
+        <module>order</module>
     </modules>
 
     <name>MySpringBoot</name>

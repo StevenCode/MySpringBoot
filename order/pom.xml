@@ -12,6 +12,16 @@
     <artifactId>order</artifactId>
     <dependencies>
 
+        <dependency>
+            <groupId>com.github.steven</groupId>
+            <artifactId>inventory-api</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.steven</groupId>
+            <artifactId>account-api</artifactId>
+            <version>${project.version}</version>
+        </dependency>
         <!--spring boot的核心启动器-->
         <dependency>
             <groupId>org.springframework.boot</groupId>

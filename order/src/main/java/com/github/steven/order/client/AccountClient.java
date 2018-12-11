@@ -25,6 +25,6 @@ public interface AccountClient {
      * @param userId 用户id
      * @return AccountDo
      */
-    @PostMapping("account-service/account/findUserId")
+    @PostMapping("account-service/account/findByUserId")
     AccountDO findUserId(@RequestParam("userId") String userId);
 }

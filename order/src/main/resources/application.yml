@@ -1,15 +1,15 @@
 server:
   port: 8884
-  contextPath: /
+  contextPath: /order-service
   address: 0.0.0.0
 
 
 spring:
   datasource:
     driver-class-name:  com.mysql.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/order?useUnicode=true&characterEncoding=utf8
+    url: jdbc:mysql://47.110.46.159:3306/order?useUnicode=true&characterEncoding=utf8
     username: root
-    password: 123456
+    password: rootpassword
     initialSize: 20
     minIdle: 20
     maxActive: 100

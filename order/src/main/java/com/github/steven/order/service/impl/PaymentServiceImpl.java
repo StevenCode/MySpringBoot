@@ -10,6 +10,7 @@ import com.github.steven.order.entity.Order;
 import com.github.steven.order.enums.OrderStatusEnum;
 import com.github.steven.order.mapper.OrderMapper;
 import com.github.steven.order.service.PaymentService;
+import com.steven.transaction.annotation.Transaction;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -45,6 +46,7 @@ public class PaymentServiceImpl implements PaymentService {
     }
 
     @Override
+    @Transaction(destination = "")
     public void makePayment(Order order) {
 
         //检查数据 这里只是demo

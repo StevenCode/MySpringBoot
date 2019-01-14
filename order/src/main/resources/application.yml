@@ -7,9 +7,9 @@ server:
 spring:
   datasource:
     driver-class-name:  com.mysql.jdbc.Driver
-    url: jdbc:mysql://47.110.46.159:3306/order?useUnicode=true&characterEncoding=utf8
+    url: jdbc:mysql://127.0.0.1:3306/order?useUnicode=true&characterEncoding=utf8
     username: root
-    password: rootpassword
+    password: 123456
     initialSize: 20
     minIdle: 20
     maxActive: 100
@@ -27,6 +27,12 @@ spring:
   application:
     name: order-service
 
+rabbitmq:
+  host: 127.0.0.1
+  port: 5672
+  username: guest
+  password: guest
+
 mybatis:
   type-aliases-package: com.github.steven.order.entity
   config-location: classpath:mybatis/mybatis-config.xml
@@ -36,6 +42,16 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
 
+com:
+  steven:
+    transaction:
+      serializer: kryo
+      repositorySupport: db
+      mythDbConfig:
+        driverClassName: com.mysql.jdbc.Driver
+        url:  jdbc:mysql://127.0.0.1:3306/transaction?useUnicode=true&amp;characterEncoding=utf8
+        username: root
+        password: 123456
 
 logging:
   level:

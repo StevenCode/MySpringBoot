@@ -8,7 +8,7 @@
     <groupId>com.github.steven</groupId>
     <artifactId>MySpringBoot</artifactId>
     <packaging>pom</packaging>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
 
     <modules>
         <module>account</module>
@@ -39,9 +39,47 @@
         <lombok.version>1.16.20</lombok.version>
         <druid.version>1.0.29</druid.version>
         <springfox.version>2.6.1</springfox.version>
+        <spring-rabbit.version>1.7.4.RELEASE</spring-rabbit.version>
+        <amqp-client.version>4.0.3</amqp-client.version>
+        <spring-amqp.version>1.7.4.RELEASE</spring-amqp.version>
     </properties>
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>com.steven.transaction</groupId>
+                <artifactId>transaction-springboot-starter-springcloud</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.steven.transaction</groupId>
+                <artifactId>transaction-rabbitmq</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.steven</groupId>
+                <artifactId>inventory-api</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.steven</groupId>
+                <artifactId>account-api</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.steven</groupId>
+                <artifactId>inventory</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.steven</groupId>
+                <artifactId>account</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.steven</groupId>
+                <artifactId>order</artifactId>
+                <version>${project.version}</version>
+            </dependency>
             <dependency>
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
@@ -190,6 +228,23 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-amqp</artifactId>
+                <version>${spring-rabbit.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.amqp</groupId>
+                <artifactId>spring-rabbit</artifactId>
+                <version>${spring-rabbit.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.rabbitmq</groupId>
+                <artifactId>amqp-client</artifactId>
+                <version>4.3.0</version>
+            </dependency>
+
 
         </dependencies>
     </dependencyManagement>

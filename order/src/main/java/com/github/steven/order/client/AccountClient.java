@@ -2,6 +2,8 @@ package com.github.steven.order.client;
 
 import com.github.steven.account.api.dto.AccountDTO;
 import com.github.steven.account.api.entity.AccountDO;
+import com.github.steven.account.api.service.AccountService;
+import com.steven.transaction.annotation.Transaction;
 import org.springframework.cloud.netflix.feign.FeignClient;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -17,6 +19,7 @@ public interface AccountClient {
      * @return true 成功
      */
     @PostMapping("account-service/account/payment")
+    @Transaction(destination = "account", target = AccountService.class)
     Boolean payment(@RequestBody AccountDTO accountDTO);
 
     /**

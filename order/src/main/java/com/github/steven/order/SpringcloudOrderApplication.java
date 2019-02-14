@@ -10,7 +10,7 @@ import org.springframework.context.annotation.ImportResource;
 @SpringBootApplication
 @EnableEurekaClient
 @EnableFeignClients
-//@ImportResource({"classpath:applicationContext.xml"})
+@ImportResource({"classpath:applicationContext.xml"})
 @MapperScan("com.github.steven.order.mapper")
 public class SpringcloudOrderApplication {
     public static void main(String[] args) {

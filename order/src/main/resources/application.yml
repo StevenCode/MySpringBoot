@@ -9,7 +9,7 @@ spring:
     driver-class-name:  com.mysql.jdbc.Driver
     url: jdbc:mysql://127.0.0.1:3306/order?useUnicode=true&characterEncoding=utf8
     username: root
-    password: 123456
+    password: rootpassword
     initialSize: 20
     minIdle: 20
     maxActive: 100
@@ -26,12 +26,11 @@ spring:
     connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
   application:
     name: order-service
-
-rabbitmq:
-  host: 127.0.0.1
-  port: 5672
-  username: guest
-  password: guest
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
 
 mybatis:
   type-aliases-package: com.github.steven.order.entity
@@ -47,11 +46,11 @@ com:
     transaction:
       serializer: kryo
       repositorySupport: db
-      mythDbConfig:
+      dbConfig:
         driverClassName: com.mysql.jdbc.Driver
         url:  jdbc:mysql://127.0.0.1:3306/transaction?useUnicode=true&amp;characterEncoding=utf8
         username: root
-        password: 123456
+        password: rootpassword
 
 logging:
   level:

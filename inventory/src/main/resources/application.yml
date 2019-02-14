@@ -6,19 +6,16 @@ server:
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/stock?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull
-    &useSSL
-    =false
+    url: jdbc:mysql://127.0.0.1:3306/stock?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&useSSL=false
     username: root
-    password: 123456
+    password: rootpassword
   application:
     name:  inventory-service
-
-rabbitmq:
-  host: 127.0.0.1
-  port: 5672
-  username: guest
-  password: guest
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
 
 mybatis:
   type-aliases-package: com.github.steven.inventory.api.entity
@@ -37,11 +34,11 @@ com:
     transaction:
       serializer: kryo
       repositorySupport: db
-      mythDbConfig:
+      dbConfig:
         driverClassName: com.mysql.jdbc.Driver
         url:  jdbc:mysql://127.0.0.1:3306/transaction?useUnicode=true&amp;characterEncoding=utf8
         username: root
-        password: 123456
+        password: rootpassword
 
 logging:
   level:
